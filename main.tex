@@ -1,0 +1,345 @@
+% 使用 xelatex -> biber -> xelatex -> xelatex 编译
+\documentclass{hbutthesis}
+\addbibresource{references.bib}
+
+\setlength{\headheight}{13pt}
+
+\begin{document}
+
+\input{hbutcover.tex} % 封面
+\input{hbutpreface.tex} % 声明
+
+\newpage % 新的一页
+\thispagestyle{romanfancy}
+\pagenumbering{Roman} % 大写罗马数字页码
+\begin{center}
+  \begin{singlespace}
+    \heiti\zihao{2}如何在湖北大学顺利毕业
+  \end{singlespace}
+\end{center}
+
+\chapter*{摘\hspace{1em}要}
+\addcontentsline{toc}{chapter}{摘要}
+\vspace{12pt} % 空一行
+
+你的摘要
+\vspace{12pt}
+
+\heiti\zihao{-4}【关键词】:\songti latex；模板
+
+\newpage
+\thispagestyle{romanfancy}
+\begin{center}
+  \begin{singlespace}
+    \zihao{2}\textbf{How to Successfully Graduate from Hubei University}
+  \end{singlespace}
+\end{center}
+
+\chapter*{\textbf{Abstract}}
+\addcontentsline{toc}{chapter}{Abstract}
+\vspace{12pt}
+
+Your abstract
+\vspace{12pt}
+
+\heiti\zihao{-4}\textbf{【Keywords】:} \textit{latex}, template
+
+{
+  \newpage
+  \pagestyle{romanfancy}   % 整个目录都使用该页眉
+  \begin{center}
+    \tableofcontents      % 章节目录
+  \end{center}
+
+  \newpage
+  \begin{center}
+    \listoffigures        % 图目录
+  \end{center}
+
+  \newpage
+  \begin{center}
+    \listoftables         % 表目录
+  \end{center}
+}
+
+\pagestyle{fancy}
+\newpage
+\pagenumbering{arabic} % 阿拉伯数字页码
+\setcounter{page}{1} % 设置页码
+\chapter{前\hspace{1em}言}
+
+\songti
+一定顺利毕业一定顺利毕业一定顺利毕业一定顺利毕业一定顺利毕业一定顺利毕业一定顺利
+毕业一定顺利毕业一定顺利毕业一定顺利毕业一定顺利毕业一定顺利毕业一定顺利毕业一定
+顺利毕业一定顺利毕业一定顺利毕业一定顺利毕业一定顺利毕业一定顺利毕业。
+
+% 下一段
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\section{二级标题}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\subsection{三级标题}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\subsection{三级标题}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\section{XXXXXXXXXXXXXXXXXXXXXXXX}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\subsection{XXXXXXXXX}
+
+文献引用方法：XXXX\cite{Zhang2024}，或XXXXXX\cite{Li2025, Rno2020, Peter2000}
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+图片引用方法：想吃蛋糕~\ref{cake}。正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[width=0.8\linewidth]{figure/cake}
+  \end{center}
+  \caption[XXXXXX]{XXXXXX\cite{Zhang2024}。} %目录为[]内的内容，正文中为{}内的内容
+  \label{cake} % 用于正文的引用
+\end{figure}
+
+\subsection{XXXXXXX}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\section{研究方案}
+
+\subsection{研究内容}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\subsection{拟解决的主要问题}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\subsection{技术路线}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+湖北大学（\ulink{https://www.hubu.edu.cn/}）正文正文正文正文正文正文正文。
+流程图如图~\ref{technology}。
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.9\linewidth]{figure/process}
+  \end{center}
+  \caption{技术路线流程图}
+  \label{technology}
+\end{figure}
+
+\newpage
+\chapter{材料与方法}
+
+\section{XXXXXXXXX}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\section{XXXXXXXXXXX}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文，计算公式：
+
+\begin{equation}
+  \begin{cases}
+    \dot{x} = \sigma (y - x) \\ %换行
+    \dot{y} = \rho x - y - xz \\
+    \dot{z} = xy - \beta z 
+  \end{cases}
+\end{equation}
+
+式中，$\dot{x}$ 为XXXXXXX，$\dot{y}$ 为XXXXXXXX。其中，XXXXX的 $3 \times 3$ 
+XX矩阵为:
+
+\[
+\begin{pmatrix}
+  a_{11} & a_{12} & a_{13} \\
+  a_{21} & a_{22} & a_{23} \\
+  a_{31} & a_{32} & a_{33}
+\end{pmatrix}
+\]
+
+\section{XXXXXXXXXXXXXXXXXX}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正，伪代码如下：
+
+\begin{algorithm}[http]
+\caption{Calculation of XXXXXX}
+\begin{algorithmic}[1] % [1] indicates line numbering
+\FOR{each N $i$}
+    \STATE $m_i \gets \text{mean(values from X1, X2, X3)}$
+    \STATE $T^i = TREE(i)$
+\ENDFOR
+\STATE Unknown operation
+\STATE Unknown operation
+\STATE Unknown operation
+\end{algorithmic}
+\end{algorithm}
+
+\newpage 
+\chapter{结果与分析}
+
+\section{图是图我是我}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文，如表~\ref{table1}。
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文，如表~\ref{table2}。
+
+\begin{table}[htbp]
+  \centering
+  \caption{XXXXXX}
+	\label{table1}
+  \vspace{-5pt}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabularx}{15cm}{lC{3cm}R{5cm}}
+    \toprule
+    XX & XXX & XXXXXX \\
+    \midrule
+    XX & $0 \sim 100$     & XXXX        \\
+    XX & $0 \sim 100$     & XXXX        \\
+    XX & $0 \sim 100$     & XXXX        \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{table}[http]
+  \centering
+  \caption{XXXXXXX}
+  \vspace{-5pt}
+  \label{table2}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{c | c c c}
+    \hline
+    \diagbox[dir=NW]{Light on}{Light off} & X &  & Y \\
+    \hline
+    X   & a & $\Leftarrow$ & b    \\
+        & $\Uparrow$  &    &      \\
+    Y   & c &              & d    \\
+    \hline
+  \end{tabular}
+\end{table}
+% 对于跨页的表格可参考附件 1 的长表格
+
+\section{看看文献的解释套路}
+
+\subsection{XXXXXX}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文，如图~\ref{lorenz}。
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\begin{figure}[htbp]
+  \begin{center}
+    \includegraphics[width=0.95\linewidth]{figure/lorenz.jpeg}
+  \end{center}
+  \caption{XXXXXX}
+  \begin{figcaption}
+    (A)\hspace{0.5em}XXXXX。
+    (B)\hspace{0.5em}XXXXX。
+    (c)\hspace{0.5em}XXXXX。
+  \end{figcaption}
+  \label{lorenz}
+\end{figure}
+
+\subsection{XXXXXX}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\section{不会编了}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\newpage
+\clearpage
+\chapter{讨\hspace{1em}论}
+
+\section{改格式}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\section{降重}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\section{降 AI}
+
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文
+正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文。
+
+\newpage
+\markboth{参考文献}{参考文献}
+\printbibliography[heading=bibintoc,title={参考文献}] % 请修改 references.bib 文件
+
+\clearpage
+\makehbuappendix
+
+\chapter{Supplementary Tables}
+\input{appendices/appendix1}
+
+\newpage
+\chapter{程序代码}
+\input{appendices/appendx2.tex}
+
+\newpage
+\thispagestyle{thanks}
+\chapter*{致\hspace{1em}谢}
+\addcontentsline{toc}{chapter}{致谢}
+
+\input{thanks.tex}
+
+\end{document}

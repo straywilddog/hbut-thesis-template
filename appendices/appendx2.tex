@@ -1,0 +1,53 @@
+%\documentclass{hbutthesis}
+
+\setlength{\headheight}{13pt}
+
+\songti\zihao{5} 
+本研究的 C++ 代码为：
+
+\begin{lstlisting}[language=C++, caption={Fibonacci sequence in C++}]
+#include <iostream>
+using namespace std;
+
+int fibonacci(int n) {
+    if (n <= 1)
+        return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+int main() {
+    int n = 10;
+    for (int i = 0; i < n; i++) {
+        cout << fibonacci(i) << " ";
+    }
+    return 0;
+}
+\end{lstlisting}
+
+本研究的 python 代码为：
+
+\begin{lstlisting}[language=Python, caption={Fibonacci sequence in Python}]
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+n = 10
+for i in range(n):
+    print(fibonacci(i), end=" ")
+\end{lstlisting}
+
+本研究的 R 代码为：
+
+\begin{lstlisting}[language=R, caption={Fibonacci sequence in R}]
+fibonacci <- function(n) {
+  if (n <= 1) {return(n)} else {
+    fibonacci(n - 1) + fibonacci(n - 2)
+  }
+}
+
+10 -> n
+for (i in 1 : n) {
+  print(fibonacci(i))
+}
+\end{lstlisting}
